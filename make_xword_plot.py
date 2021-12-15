@@ -74,7 +74,7 @@ def make_lineplot(df, roll_num):
 fname = sys.argv[1]
 roll_num = int(sys.argv[2])
 xw = pd.read_csv(fname)
-#xw_full = add_cols(xw)
+xw_full = add_cols(xw)
 #xw_full = xw_full[xw_full.date_obj > date(2021,7,1)]
 xw_solved = get_solved_df(xw_full)
 xw_rolling = get_rolling_df(xw_solved, roll_num)
